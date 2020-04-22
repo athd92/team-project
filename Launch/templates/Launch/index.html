@@ -1,4 +1,33 @@
-<h1>Hello Antoine</h1>
+<!doctype html>
+
+<html lang="en">
+
+{% load static %}
 
 
-<p>On dirait que ça marche!</p>
+<head>
+  <meta charset="utf-8">
+  <title>Launch</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" type="text/css"  href="{% static 'css/index.css' %}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="loader">
+  lOADING PREFLIGHT PROGRAM<br>
+  [<span id="loader-increment"></span>] <span id="percent">0%</span>
+</div>
+<div id="generated_output"></div>
+<div id="clear" class="button reset">REBOOT</div>
+<div id="generate" class="button">INITIATE FTL PREFLIGHT</div>
+<div id="enter" class="button">ENTER</div>
+
+
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
