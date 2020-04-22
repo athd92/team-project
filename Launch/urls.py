@@ -22,4 +22,5 @@ app_name = 'Launch'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.IndexView.as_view(), name='index'),
+    path('mentions_legales/', views.LegalView.as_view(), name='legals'),
 ]

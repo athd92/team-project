@@ -1,0 +1,14 @@
+<h1>Register page</h1>
+
+<p>this is where we can register</p>
+
+<div>
+    <form method="post" style="display: inline-table;">
+        {% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <input type="submit" class="btn btn-primary btn-md" value="Créer un compte">
+    </form>
+    <p><a href="{% url 'User:login' %}" title="Se connecter">Déjà enregistré?</a></p>
+</div>
+
+<p><a href="{% url 'Launch:index' %}">Retourner à l'accueil</a></p>
